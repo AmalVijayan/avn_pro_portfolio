@@ -1,18 +1,24 @@
-import React, {useState} from 'react'
-import Header from '../Components/Header/Header'
-import MobileMenu from '../Components/MobileMenu/MobileMenu'
+import React, { useState } from 'react'
+import  NavBar from '../components/NavBar'
+import MobileMenu from '../components/MobileMenu'
+import HeadSection from '../components/HeadSection'
+import { BioObj } from '../components/BioSection/Data'
+import BioSection from '../components/BioSection'
 
 const Home = () => {
-    
-    const [isOpen, setisOpen] = useState(false)
 
+    const [isOpen, setIsOpen] = useState(false)
     const toggle = () => {
-        setisOpen(!isOpen)
+        setIsOpen(!isOpen)
     }
+
+
     return (
         <>
-        <Header toggle={toggle}/>
-        <MobileMenu isOpen={isOpen} toggle={toggle}/>
+            <MobileMenu isOpen={isOpen} toggle={toggle}/>
+            <NavBar toggle={toggle}/>
+            <HeadSection />
+            <BioSection { ...BioObj } />
         </>
     )
 }
