@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const BioSectionContainer = styled.div`
+    height:800px;
     color: white;
+    height: 800px;
+
     // background: ${({ lightBg }) => ( lightBg ? '#f9f9f9' : '#010606') };
     // background: '#6C63FF';
     background-image: linear-gradient(to bottom, #0a0645, #00205c, #003670, #004d82, #006492, #00719b, #057ea2, #188ba9, #1292ad, #0e99b0, #0f9fb2, #14a6b4);
@@ -25,7 +28,8 @@ export const BioSectionContainer = styled.div`
 
 
     @media screen and (max-width: 768px){
-        padding: 100px 0;
+        padding: 10px 0;
+        height: 850px;
     }
 `;
 
