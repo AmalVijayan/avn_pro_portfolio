@@ -6,6 +6,7 @@ import { BioObj } from '../components/BioSection/Data'
 import { SkillObj } from '../components/SkillSection/Data'
 import BioSection from '../components/BioSection'
 import SkillSection from '../components/SkillSection'
+import Footer from '../components/Footer'
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             <HeadSection />
             <BioSection { ...BioObj } />
             <SkillSection  { ...SkillObj } />
+            <Footer />
         </>
     )
 }
