@@ -1,5 +1,5 @@
 export const SkillObj = {
-    id : 'skill',
+    id : 'skills',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

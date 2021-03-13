@@ -78,19 +78,9 @@ const NavBar = ({toggle}) => {
                             activeClass='active'
                             >Blog</NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to='profiles' 
-                            offset={0}
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            activeClass='active'
-                            >Social Media</NavLinks>
-                        </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/hire/me">Hire</NavBtnLink>
+                        <NavBtnLink to="/getintouch/me">Get In Touch</NavBtnLink>
                     </NavBtn>
                 </NavContainer>
             </Nav>

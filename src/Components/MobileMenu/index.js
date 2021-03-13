@@ -26,11 +26,8 @@ const MobileMenu = ({isOpen, toggle}) => {
                     <MobileMenuItem>
                         <MobileMenuLinks to='blog' onClick={toggle}>Blog</MobileMenuLinks>
                     </MobileMenuItem>
-                    <MobileMenuItem>
-                        <MobileMenuLinks to='profiles' onClick={toggle} >Social Media</MobileMenuLinks>
-                    </MobileMenuItem>
                     <MobileMenuItemBtn>
-                        <MobBtnLink to="/hire/me">Hire</MobBtnLink>
+                        <MobBtnLink to="/getintouch/me">Get In Touch</MobBtnLink>
                     </MobileMenuItemBtn>
             </MobileMenuItemsContainer>
 
