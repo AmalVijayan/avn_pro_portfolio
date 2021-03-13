@@ -3,7 +3,9 @@ import  NavBar from '../components/NavBar'
 import MobileMenu from '../components/MobileMenu'
 import HeadSection from '../components/HeadSection'
 import { BioObj } from '../components/BioSection/Data'
+import { SkillObj } from '../components/SkillSection/Data'
 import BioSection from '../components/BioSection'
+import SkillSection from '../components/SkillSection'
 
 const Home = () => {
 
@@ -19,6 +21,7 @@ const Home = () => {
             <NavBar toggle={toggle}/>
             <HeadSection />
             <BioSection { ...BioObj } />
+            <SkillSection  { ...SkillObj } />
         </>
     )
 }
