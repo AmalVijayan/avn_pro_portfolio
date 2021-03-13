@@ -19,7 +19,7 @@ import { BioRow, BioSectionContainer,
          SocialMedia
          } from './BioSectionElements'
 
-const BioSection = ( {lightBg, id, imgStart, lightText, darkText } ) => {
+const BioSection = ( {lightBg, id, img, imgStart, lightText, darkText } ) => {
     return (
         <>
             <BioSectionContainer lightBg={lightBg} id={id} >
@@ -55,7 +55,7 @@ const BioSection = ( {lightBg, id, imgStart, lightText, darkText } ) => {
                        <Column2>
 
                        <ImgWrap>
-                            <Img src={ require('../../images/profilepic.jpg').default } alt='Amal V Nair' />
+                            <Img src={ img } alt='Amal V Nair' />
                         </ImgWrap>
 
                        </Column2>
