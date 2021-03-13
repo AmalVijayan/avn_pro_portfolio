@@ -34,7 +34,13 @@ const HeadSection = ({OnHover}) => {
                     - Harvey Spector
                 </SectionP>
                 <SectionBtnWrapper>
-                    <Button to="req_demo" 
+                    <Button to='bio' 
+                            offset={-10}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            activeClass='active' 
                     // onMouseEnter={ onHover } 
                     // onMouseLeave={ OnHover } 
                     primary='true'

@@ -48,6 +48,16 @@ const NavBar = ({toggle}) => {
                     </MobileIcons>
                     <NavMenu>
                         <NavItem>
+                            <NavLinks to='bio' 
+                            offset={-10}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            activeClass='active'
+                            >Profile</NavLinks>
+                        </NavItem>
+                        <NavItem>
                             <NavLinks to='skills' 
                             offset={-10}
                             smooth={true}
@@ -57,16 +67,6 @@ const NavBar = ({toggle}) => {
                             activeClass='active'
                             >
                                 Skills</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='exp' 
-                            offset={-10}
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            activeClass='active'
-                            >Experience</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='blog' 

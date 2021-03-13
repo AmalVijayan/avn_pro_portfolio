@@ -18,10 +18,21 @@ const MobileMenu = ({isOpen, toggle}) => {
             
             <MobileMenuItemsContainer>
                     <MobileMenuItem>
-                        <MobileMenuLinks to='skills' onClick={toggle} >Skills</MobileMenuLinks>
+                        <MobileMenuLinks to='bio' 
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            onClick={toggle} >Profile</MobileMenuLinks>
                     </MobileMenuItem>
                     <MobileMenuItem>
-                        <MobileMenuLinks to='exp' onClick={toggle} >Experience</MobileMenuLinks>
+                        <MobileMenuLinks to='skills' 
+                            offset={280}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'onClick={toggle} >Skills</MobileMenuLinks>
                     </MobileMenuItem>
                     <MobileMenuItem>
                         <MobileMenuLinks to='blog' onClick={toggle}>Blog</MobileMenuLinks>
