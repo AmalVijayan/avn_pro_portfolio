@@ -28,12 +28,10 @@ const HeadSection = ({OnHover}) => {
         
             <SectionContent>
                 <SectionH1>
-                    Full Stack Developer & Data Scientist
+                    "Loyalty is a two-way street.If I'm asking for it from you then you're getting it from me."
                 </SectionH1>
                 <SectionP>
-                A Software Engineer and a Data Scientist who believes artificial intelligence is the future. A
-                technical blogger who likes to help and assist the technology enthusiasts in the field of
-                artificial intelligence and machine learning and a free time mentor for those who seek help.
+                    - Harvey Spector
                 </SectionP>
                 <SectionBtnWrapper>
                     <Button to="req_demo" 
@@ -41,7 +39,7 @@ const HeadSection = ({OnHover}) => {
                     // onMouseLeave={ OnHover } 
                     primary='true'
                     dark='true'>
-                         Check Experience {  hover ? <ArrowForward/> : <ArrowRight/>}
+                         Profile {  hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button> 
                 </SectionBtnWrapper>
             </SectionContent>

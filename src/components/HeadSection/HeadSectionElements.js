@@ -44,16 +44,18 @@ export const VideoBg = styled.video`
 
 export const SectionContent = styled.div`
     z-index:3;
-    max-width: 1200px;
+    max-width: 800px;
     flex-direction: column;
     align-items: center;
 `;
 
 export const SectionH1 = styled.h1`
     color: white;
-    font-size: 40px;
+    font-size: 48px;
     text-align: center;
-    
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-family: 'Ranchers', cursive;
     
     @media screen and (max-width: 768px){
         font-size: 40px;
@@ -68,12 +70,12 @@ export const SectionH1 = styled.h1`
 
 export const SectionP = styled.p`
     margin-top: 22px;
-    max-width: 600px;
+    max-width: 700px;
     color: white;
-    text-align: center;
-    font-size: 24px;
-    justify-self: center;
-
+    text-align: right;
+    font-size: 30px;
+    // justify-self: right;
+    font-weight: 600;
      
     @media screen and (max-width: 768px){
         font-size: 22px;
