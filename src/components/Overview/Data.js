@@ -1,5 +1,5 @@
 export const OverviewObj = {
-    id : 'overview',
+    id : 'profile',
     lightBg: false,
     lightText: false,
     lightTextDesc: true,

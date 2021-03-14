@@ -73,7 +73,7 @@ const Overview = ( { id,
                         <Column2 imgStart={imgStart}>
 
                             <TextWrapper>
-                                    <TopLine>Overview</TopLine>
+                                    <TopLine>Profile</TopLine>
                                     <Heading lightText={lightText}>Full Stack  Developer & Data Scientist</Heading>
                                     <SubHeading darkText={darkText} >A Software Engineer and a Data Scientist who believes artificial intelligence is the future. A technical blogger who likes to help and assist the technology enthusiasts in the field of artificial intelligence and machine learning and a free time mentor for those who seek help.</SubHeading>
 

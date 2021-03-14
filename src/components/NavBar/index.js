@@ -48,7 +48,7 @@ const NavBar = ({toggle}) => {
                     </MobileIcons>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='bio' 
+                            <NavLinks to='profile' 
                             offset={0}
                             smooth={true}
                             duration={500}
@@ -58,7 +58,7 @@ const NavBar = ({toggle}) => {
                             >Profile</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='skills' 
+                            <NavLinks to='services' 
                             offset={0}
                             smooth={true}
                             duration={500}
@@ -66,7 +66,7 @@ const NavBar = ({toggle}) => {
                             exact='true'
                             activeClass='active'
                             >
-                                Skills</NavLinks>
+                                Services</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='blog' 

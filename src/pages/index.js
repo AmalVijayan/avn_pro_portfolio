@@ -9,6 +9,7 @@ import SkillSection from '../components/SkillSection'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
 import { OverviewObj } from '../components/Overview/Data'
+import Services from '../components/Services'
 
 const Home = () => {
 
@@ -24,9 +25,10 @@ const Home = () => {
             <MobileMenu isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle}/>
             <HeadSection />
-            <BioSection { ...BioObj } />
+            {/* <BioSection { ...BioObj } /> */}
             <Overview { ...OverviewObj }/>
-            <SkillSection  { ...SkillObj } />
+            <Services />
+            {/* <SkillSection  { ...SkillObj } /> */}
             <Footer />
         </>
     )

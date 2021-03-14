@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
     // border: 3px dashed white;
-    background-color: #0a0645;     
+    background-color: black;     
     height: 80px;
     
     @media screen and (max-width : 850px ){

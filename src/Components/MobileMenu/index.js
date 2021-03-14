@@ -18,7 +18,7 @@ const MobileMenu = ({isOpen, toggle}) => {
             
             <MobileMenuItemsContainer>
                     <MobileMenuItem>
-                        <MobileMenuLinks to='bio' 
+                        <MobileMenuLinks to='profile' 
                             offset={-80}
                             smooth={true}
                             duration={500}
@@ -27,12 +27,12 @@ const MobileMenu = ({isOpen, toggle}) => {
                             onClick={toggle} >Profile</MobileMenuLinks>
                     </MobileMenuItem>
                     <MobileMenuItem>
-                        <MobileMenuLinks to='skills' 
-                            offset={280}
+                        <MobileMenuLinks to='services' 
+                            offset={-50}
                             smooth={true}
                             duration={500}
                             spy={true}
-                            exact='true'onClick={toggle} >Skills</MobileMenuLinks>
+                            exact='true'onClick={toggle} >Services</MobileMenuLinks>
                     </MobileMenuItem>
                     <MobileMenuItem>
                         <MobileMenuLinks to='blog' onClick={toggle}>Blog</MobileMenuLinks>

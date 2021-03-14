@@ -11,7 +11,8 @@ import {
     ArrowRight
 } from './HeadSectionElements'
 import {Button} from '../ScrollButton/ButtonElements'
-import Video from '../../videos/video.mov'
+// import Video from '../../videos/video.mov'
+import Video from '../../videos/video2.mp4'
 
 const HeadSection = ({OnHover}) => {
 
@@ -23,7 +24,8 @@ const HeadSection = ({OnHover}) => {
     return (
         <SectionContainer >
             <SectionBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mov' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mov' /> */}
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </SectionBg>
         
             <SectionContent>
@@ -34,7 +36,7 @@ const HeadSection = ({OnHover}) => {
                     - Harvey Spector
                 </SectionP>
                 <SectionBtnWrapper>
-                    <Button to='bio' 
+                    <Button to='profile' 
                             offset={0}
                             smooth={true}
                             duration={500}

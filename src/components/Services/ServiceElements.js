@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 
 export const ServiceSectionContainer = styled.div`
-    height:860px;
+    height:auto;;
     color: black;
-    align-items: center;
+    align-items: center;    
+    padding-bottom: 50px;
 
     // background: ${({ lightBg }) => ( lightBg ? '#f9f9f9' : '#010606') };
 
@@ -14,12 +15,6 @@ export const ServiceSectionContainer = styled.div`
 
     position: relative;
     z-index: 3;
-
-
-    @media screen and (max-width:990px){
-        height:auto;
-    }
-
 
 `;
 

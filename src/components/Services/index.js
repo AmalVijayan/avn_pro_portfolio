@@ -14,7 +14,7 @@ import { ServiceSectionContainer,
 const Services = () => {
     return (
         <>
-        <ServiceSectionContainer>
+        <ServiceSectionContainer id='services'>
             <ServicesWrapper>
 
                 <SectionHeading>Services</SectionHeading>
