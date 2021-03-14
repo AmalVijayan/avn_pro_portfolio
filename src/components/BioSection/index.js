@@ -43,9 +43,9 @@ const BioSection = ( {lightBg, id, img, imgStart, lightText, darkText } ) => {
 
                                 <SocialMediaWrapper>
                                     <SocialIcons>
-                                    <SocialIconLink href="#" target="_blank" aria-label="Github"> <FaGithub size="50px"/> </SocialIconLink>
-                                    <SocialIconLink href="#" target="_blank" aria-label="LinkedIn"><FaLinkedin size="50px"/></SocialIconLink>
-                                    <SocialIconLink href="#" target="_blank" aria-label="StackOverflow"><FaStackOverflow size="50px"/></SocialIconLink>
+                                    <SocialIconLink href="https://www.linkedin.com/in/amal-v-66a23512a/" target="_blank" aria-label="LinkedIn"><FaLinkedin size="50px"/></SocialIconLink>
+                                    <SocialIconLink href="https://github.com/AmalVijayan" target="_blank" aria-label="Github"> <FaGithub size="50px"/> </SocialIconLink>
+                                    <SocialIconLink href="https://stackoverflow.com/users/8311953/amal-vijayan" target="_blank" aria-label="StackOverflow"><FaStackOverflow size="50px"/></SocialIconLink>
                                 </SocialIcons>
                                 </SocialMediaWrapper>
                    

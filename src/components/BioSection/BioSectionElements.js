@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const BioSectionContainer = styled.div`
     height:800px;
     color: white;
-    height: 800px;
+    height: 860px;
 
     // background: ${({ lightBg }) => ( lightBg ? '#f9f9f9' : '#010606') };
     // background: '#6C63FF';

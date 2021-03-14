@@ -49,7 +49,7 @@ const NavBar = ({toggle}) => {
                     <NavMenu>
                         <NavItem>
                             <NavLinks to='bio' 
-                            offset={-10}
+                            offset={0}
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -59,7 +59,7 @@ const NavBar = ({toggle}) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks to='skills' 
-                            offset={-10}
+                            offset={0}
                             smooth={true}
                             duration={500}
                             spy={true}

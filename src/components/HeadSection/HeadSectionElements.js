@@ -7,7 +7,7 @@ export const SectionContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 780px;
+    height: 860px;
     position: relative;
     z-index: 1;
 
@@ -55,8 +55,8 @@ export const SectionH1 = styled.h1`
     text-align: center;
     letter-spacing: 5px;
     font-weight: 300;
-    font-family: 'Ranchers', cursive;
-    
+    font-family: 'Redressed', cursive;
+
     @media screen and (max-width: 768px){
         font-size: 40px;
     }
