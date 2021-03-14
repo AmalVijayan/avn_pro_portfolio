@@ -121,7 +121,6 @@ const Overview = ( { id,
                                             <Tippy  interactive={true} interactiveBorder={200} delay={0} content={ tooltip4 }>
                                                 <StartRating>
                                                     <FaStar size={ starSize }/>
-                                                    <FaStar size={ starSize }/>
                                                     <FaStarHalfAlt size={ starSize }/>
                                                 </StartRating> 
                                             </Tippy>
