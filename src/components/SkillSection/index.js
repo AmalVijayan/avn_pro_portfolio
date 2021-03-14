@@ -19,8 +19,6 @@ import { SkillRow, SkillSectionContainer,
     StartRating,
     } from './SkillSectionElements'
 
-import ReactTooltip from 'react-tooltip';
-
 
 const SkillSection = ({lightBg, 
                        id, 
@@ -54,7 +52,6 @@ const SkillSection = ({lightBg,
 
                     <SkillWrapper>
 
-                    <ReactTooltip className="toolTip" />
 
 
                     <SkillRow imgStart={imgStart} >
