@@ -75,7 +75,9 @@ const Overview = ( { id,
                             <TextWrapper>
                                     <TopLine>Profile</TopLine>
                                     <Heading lightText={lightText}>Full Stack  Developer & Data Scientist</Heading>
-                                    <SubHeading darkText={darkText} >A Software Engineer and a Data Scientist who believes artificial intelligence is the future. A technical blogger who likes to help and assist the technology enthusiasts in the field of artificial intelligence and machine learning and a free time mentor for those who seek help.</SubHeading>
+                                    <SubHeading darkText={darkText} >Hi! I am Amal.</SubHeading>
+                                    <SubHeading darkText={darkText} >I am a Web Developer and a Data Scientist who has worked on one of the most popular ML hackathon platforms in India. An accomplished backend developer who has experience writing clean APIs for almost all key aspects of web development from secure authentication to managing asynchronous tasks to subscription-based payment integrations. Also a front-end developer with hands-on experience in HTML, CSS, JavaScript, and ReactJs.</SubHeading>
+
 
                             </TextWrapper>
 

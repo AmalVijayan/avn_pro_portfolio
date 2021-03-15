@@ -31,7 +31,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Writes clean and secure REST API's in Python. Good command over Django and Flask frameworks. Frontend Developement using HTML,CSS, JS and React.
+                            Writes clean and secure REST API's in Python using Django backend. Frontend developement using HTML,CSS, JS and React.
                         </ServiceDescription>
 
                     </ServiceInfoWrapper>
@@ -48,7 +48,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Scrapes, cleans, processes and visualizes datastes and Creates ML predictive models. Hands on experience with a various Ml frameworks and libraries. 
+                            Scrapes, cleans, processes and visualizes datastes and creates ML predictive models. Hands on experience with various ML frameworks and libraries in Python. 
                         </ServiceDescription>
 
                     </ServiceInfoWrapper>
@@ -65,7 +65,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Creates, scales, and manages cloud infrastructure on AWS. Aslo familiar with Google Cloud services and APIs.
+                            Creates, scales, and manages cloud infrastructure on AWS. Also familiar with Google Cloud services and APIs.
                         </ServiceDescription>
 
                     </ServiceInfoWrapper>
@@ -82,7 +82,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Writes and maintains clean codes in GitHub. Expertise in using Git CLI and services. Also familiar with Tortoise SVN.
+                            Writes and maintains clean code repositories in GitHub. Expertise in using Git CLI and services. Also familiar with Tortoise SVN.
                         </ServiceDescription>
 
                     </ServiceInfoWrapper>
@@ -99,7 +99,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Containerizes web application applications using docker for ease of deployment. 
+                            Containerizes web applications using docker for ease of deployment. Hands-on experience in building docker images and serving applications in containers.
                         </ServiceDescription>
 
                     </ServiceInfoWrapper>
@@ -116,7 +116,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Familiar with deploying of vaious types of application using cloud infrastructures and AWS services like S3, Elastic Beanstal, Elastic Container Service , Elastic Compute .,etc.
+                            Deploys various types of applications using cloud infrastructures and AWS services like S3, Elastic Beanstalk, Elastic Container Service , Elastic Compute .,etc.
                         </ServiceDescription> 
 
                     </ServiceInfoWrapper>

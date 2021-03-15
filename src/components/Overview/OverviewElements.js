@@ -19,6 +19,11 @@ export const OverviewSectionContainer = styled.div`
         padding: 10px 0;
         height: 1250px;
     }
+
+    @media screen and (max-width: 610px){
+        padding: 10px 0;
+        height: auto;
+    }
 `;
 
 export const OverviewWrapper = styled.div`
