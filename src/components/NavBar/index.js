@@ -9,7 +9,8 @@ import {
     NavItem, 
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    NavBtnWrapper
 } from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
@@ -68,20 +69,15 @@ const NavBar = ({toggle}) => {
                             >
                                 Services</NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to='blog' 
-                            offset={-5}
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact='true'
-                            activeClass='active'
-                            >Blog</NavLinks>
-                        </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="/getintouch/me">Get In Touch</NavBtnLink>
-                    </NavBtn>
+                    <NavBtnWrapper>
+                        <NavBtn>
+                            <NavBtnLink to="/blog">Blog</NavBtnLink>
+                        </NavBtn>
+                        <NavBtn>
+                            <NavBtnLink to="/getintouch/me">Get In Touch</NavBtnLink>
+                        </NavBtn>
+                    </NavBtnWrapper>
                 </NavContainer>
             </Nav>
             </IconContext.Provider>

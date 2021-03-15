@@ -34,9 +34,9 @@ const MobileMenu = ({isOpen, toggle}) => {
                             spy={true}
                             exact='true'onClick={toggle} >Services</MobileMenuLinks>
                     </MobileMenuItem>
-                    <MobileMenuItem>
-                        <MobileMenuLinks to='blog' onClick={toggle}>Blog</MobileMenuLinks>
-                    </MobileMenuItem>
+                    <MobileMenuItemBtn>
+                        <MobBtnLink to="/blog">Blog</MobBtnLink>
+                    </MobileMenuItemBtn>
                     <MobileMenuItemBtn>
                         <MobBtnLink to="/getintouch/me">Get In Touch</MobBtnLink>
                     </MobileMenuItemBtn>

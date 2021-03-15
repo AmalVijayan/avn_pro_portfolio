@@ -53,7 +53,7 @@ export const MobileMenuLinks = styled(LinkS)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 18px;
     text-decoration: none;
     link-style: none;
     transition: 0.8s ease-in-out;
@@ -75,13 +75,14 @@ export const MobBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: white;
     white-space: nowrap;
-    padding: 16px 64px;
+    padding: 12px 24px;
     color: #0a0645;
-    font-size: 16px;
+    font-size: 18px;
     outline: none;
     border: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    margin: 20px auto 0 auto;
 
 `
