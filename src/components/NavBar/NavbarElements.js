@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent' )};
+    background: ${({scrollNav}) => (scrollNav ? 'black' : 'black' )};
     height: 80px;
-    margin-top: -80px;
+    margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,8 @@ export const MobileIcons = styled.div`
     } `;
 
 export const NavMenu = styled.ul`
-    display: flex;
+    // display: flex;
+    display: ${({ showScrollMenu }) => ( showScrollMenu ? 'flex' : 'none') };
     align-items: center;
     list-style: none;
     text-align: center;

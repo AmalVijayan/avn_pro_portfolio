@@ -22,8 +22,8 @@ const Home = () => {
     return (
         <>
             {/* <ReactTooltip className="toolTip" /> */}
-            <MobileMenu isOpen={isOpen} toggle={toggle}/>
-            <NavBar toggle={toggle}/>
+            <MobileMenu isOpen={isOpen} toggle={toggle} showScrollMenu={true}/>
+            <NavBar toggle={toggle} showScrollMenu={true} negMargin={true}/>
             <HeadSection />
             {/* <BioSection { ...BioObj } /> */}
             <Overview { ...OverviewObj }/>

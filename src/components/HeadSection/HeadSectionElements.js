@@ -2,12 +2,13 @@ import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
  
 export const SectionContainer = styled.div`
+// border: 4px dashed red;
     background: #0c0c0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 860px;
+    min-height: 860px;
     position: relative;
     z-index: 1;
 
@@ -20,6 +21,11 @@ export const SectionContainer = styled.div`
         right:0;
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 3;
+    }
+
+    @media screen and (max-width: 1000px){
+        min-height: 600px;
+        padding-bottom: 50px;
     }
 `;
 
@@ -43,6 +49,7 @@ export const VideoBg = styled.video`
 `;
 
 export const SectionContent = styled.div`
+// border: 2px dashed white;
     z-index:3;
     max-width: 800px;
     flex-direction: column;

@@ -15,7 +15,7 @@ import {
 import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
 
-const NavBar = ({toggle}) => {
+const NavBar = ({toggle, showScrollMenu}) => {
 
     const [scrollNav, setscrollNav] = useState(false)
 
@@ -47,7 +47,7 @@ const NavBar = ({toggle}) => {
                     <MobileIcons onClick={toggle}>
                         <FaBars/>
                     </MobileIcons>
-                    <NavMenu>
+                    <NavMenu showScrollMenu={showScrollMenu}>
                         <NavItem>
                             <NavLinks to='profile' 
                             offset={0}

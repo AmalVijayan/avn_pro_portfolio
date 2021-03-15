@@ -37,8 +37,13 @@ export const MobileMenuItemsContainer = styled.div`
     color: #fff;
 `
 
+export const MobileMenuScrollLinks = styled.div`
+    display: ${({ showScrollMenu }) => (showScrollMenu ? 'grid' : 'none' )};
+`;
+
+
 export const MobileMenuItem = styled.ul`
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 12px);
     text-align: center;
@@ -48,6 +53,7 @@ export const MobileMenuItem = styled.ul`
     }
 
 `
+
 
 export const MobileMenuLinks = styled(LinkS)`
     display: flex;

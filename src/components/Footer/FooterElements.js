@@ -53,11 +53,10 @@ export const SocialLogo = styled(Link)`
     display: flex;
     align-items: center;
     font-weight: bold;
+    margin: auto 0 auto 20px;
 
     @media screen and (max-width : 850px ){
-        margin-bottom: 20px;
-
-
+        margin: auto auto 20px auto;
     }
 `;
 

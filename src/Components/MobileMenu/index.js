@@ -6,10 +6,11 @@ import { MobileMenuContainer,
          MobileMenuItem,
          MobileMenuLinks,
          MobileMenuItemBtn,
-         MobBtnLink
+         MobBtnLink,
+         MobileMenuScrollLinks
         } from './MobileMenuElements'
 
-const MobileMenu = ({isOpen, toggle}) => {
+const MobileMenu = ({isOpen, toggle, showScrollMenu}) => {
     return (
         <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -17,6 +18,7 @@ const MobileMenu = ({isOpen, toggle}) => {
             </Icon>
             
             <MobileMenuItemsContainer>
+                <MobileMenuScrollLinks showScrollMenu={showScrollMenu}>
                     <MobileMenuItem>
                         <MobileMenuLinks to='profile' 
                             offset={-80}
@@ -34,6 +36,7 @@ const MobileMenu = ({isOpen, toggle}) => {
                             spy={true}
                             exact='true'onClick={toggle} >Services</MobileMenuLinks>
                     </MobileMenuItem>
+                </MobileMenuScrollLinks>
                     <MobileMenuItemBtn>
                         <MobBtnLink to="/blog">Blog</MobBtnLink>
                     </MobileMenuItemBtn>
