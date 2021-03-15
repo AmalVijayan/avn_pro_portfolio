@@ -140,3 +140,17 @@ export const NavBtnWrapper = styled.div`
     justify-content: space-between;
 
 `;
+
+
+export const HomeIconLink = styled.a`
+    display:none;
+    @media screen and (min-width: 768px){
+        display: ${({ showHomeIcon }) => (showHomeIcon ? 'grid' : 'none' )};
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        // border: 3px dashed red;
+        justify-self: center;
+        margin:auto;
+    }
+`;

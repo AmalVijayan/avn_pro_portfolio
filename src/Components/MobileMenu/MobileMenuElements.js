@@ -92,3 +92,18 @@ export const MobBtnLink = styled(LinkR)`
     margin: 20px auto 0 auto;
 
 `
+export const MobileMenuBtnWrapper = styled.div`
+    display: grid;
+`;
+
+
+export const HomeIconLink = styled.a`
+    display: ${({ showHomeIcon }) => (showHomeIcon ? 'grid' : 'none' )};
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    // border: 3px dashed red;
+    justify-self: center;
+    margin-bottom: 60px;
+
+`;

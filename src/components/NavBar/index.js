@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaHome } from 'react-icons/fa'
 import {
     Nav, 
     NavContainer, 
@@ -10,12 +10,13 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink,
-    NavBtnWrapper
+    NavBtnWrapper,
+    HomeIconLink
 } from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
 
-const NavBar = ({toggle, showScrollMenu}) => {
+const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
 
     const [scrollNav, setscrollNav] = useState(false)
 
@@ -47,6 +48,9 @@ const NavBar = ({toggle, showScrollMenu}) => {
                     <MobileIcons onClick={toggle}>
                         <FaBars/>
                     </MobileIcons>
+                    <HomeIconLink showHomeIcon={showHomeIcon} href='/'>
+                            <FaHome />
+                     </HomeIconLink>
                     <NavMenu showScrollMenu={showScrollMenu}>
                         <NavItem>
                             <NavLinks to='profile' 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaHome } from 'react-icons/fa'
 import { MobileMenuContainer,
          Icon,
          CloseIcon,
@@ -7,10 +8,14 @@ import { MobileMenuContainer,
          MobileMenuLinks,
          MobileMenuItemBtn,
          MobBtnLink,
-         MobileMenuScrollLinks
+         MobileMenuScrollLinks,
+         MobileMenuBtnWrapper,
+         HomeIconLink
         } from './MobileMenuElements'
+import {SocialIconLink} from '../Overview/OverviewElements'
 
-const MobileMenu = ({isOpen, toggle, showScrollMenu}) => {
+
+const MobileMenu = ({isOpen, toggle, showScrollMenu, showHomeIcon }) => {
     return (
         <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -37,12 +42,17 @@ const MobileMenu = ({isOpen, toggle, showScrollMenu}) => {
                             exact='true'onClick={toggle} >Services</MobileMenuLinks>
                     </MobileMenuItem>
                 </MobileMenuScrollLinks>
+                <MobileMenuBtnWrapper>
+                    <HomeIconLink showHomeIcon={showHomeIcon} href='/'>
+                            <FaHome />
+                     </HomeIconLink>
                     <MobileMenuItemBtn>
                         <MobBtnLink to="/blog">Blog</MobBtnLink>
                     </MobileMenuItemBtn>
                     <MobileMenuItemBtn>
                         <MobBtnLink to="/getintouch/me">Get In Touch</MobBtnLink>
                     </MobileMenuItemBtn>
+                </MobileMenuBtnWrapper>
             </MobileMenuItemsContainer>
 
         </MobileMenuContainer>
