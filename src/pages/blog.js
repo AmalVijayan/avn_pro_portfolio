@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import  NavBar from '../components/NavBar'
 import MobileMenu from '../components/MobileMenu'
 import Footer from '../components/Footer'
+import BlogSection from '../components/BlogSection'
 
 const Blog = () => {
 
@@ -16,7 +17,7 @@ const Blog = () => {
         <> 
             <MobileMenu isOpen={isOpen} toggle={toggle} showScrollMenu={false} showHomeIcon={true}/>
             <NavBar toggle={toggle} showScrollMenu={false} showHomeIcon={true} />
-            <h1> THIS IS BLOG</h1>
+            <BlogSection />
         </>
     )
 }
