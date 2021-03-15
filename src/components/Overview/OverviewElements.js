@@ -214,10 +214,12 @@ export const CButton = styled.button`
     font-size: 20px;
     cursor: pointer;
     border: none;
-
+    border: 1px solid black;
+    
     &:hover{
         color:black;
         background: gold;
+        border: 1px solid black;
     }
 
     @media screen and (max-width: 360px){
