@@ -15,12 +15,7 @@ export const OverviewSectionContainer = styled.div`
     position: relative;
     z-index: 3;
 
-    @media screen and (max-width: 760px){
-        padding: 10px 0;
-        height: 1250px;
-    }
-
-    @media screen and (max-width: 610px){
+    @media screen and (max-width: 770px){
         padding: 10px 0;
         height: auto;
     }
@@ -215,7 +210,7 @@ export const CButton = styled.button`
     cursor: pointer;
     border: none;
     border: 1px solid black;
-    
+
     &:hover{
         color:black;
         background: gold;
