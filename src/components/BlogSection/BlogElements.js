@@ -1,5 +1,7 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import { fadeInLeft, fadeInDown } from 'react-animations';
 
+const fadeAnimation = keyframes`${fadeInLeft}`;
 
 export const BlogSectionContainer = styled.div`
     height:auto;;
@@ -20,6 +22,7 @@ export const BlogSectionContainer = styled.div`
 
 
 export const BlogsWrapper = styled.div`
+
     // border: 3px dashed red;
     display: grid;
     z-index: 1;
@@ -62,25 +65,27 @@ export const BlogRow = styled.div`
     margin: 0 auto 60 auto;
     padding: 10px;
 
-    // @media screen and (max-width:990px){
-    //     grid-template-columns: repeat(2,300px);  /* 3 columns */
-    //     grid-template-rows: repeat(3,300px); /* 3 rows  */
-    // }
+    @media screen and (max-width:1600px){
+        grid-template-columns: repeat(2,500px);  /* 3 columns */
+        grid-template-rows: repeat(3,400px); /* 3 rows  */
+    }
 
-    // @media screen and (max-width: 650px){
-    //     grid-template-columns: repeat(1,300px);  /* 3 columns */
-    //     grid-template-rows: repeat(6,300px); /* 3 rows  */
-    // }
+    @media screen and (max-width: 1130px){
+        grid-template-columns: repeat(1,500px);  /* 3 columns */
+        grid-template-rows: repeat(6,400px); /* 3 rows  */
+    }
 
-    // @media screen and (max-width: 320px){
-    //     grid-template-columns: repeat(1,260px);  /* 3 columns */
-    //     grid-template-rows: repeat(6,320px); /* 3 rows  */
-    //     margin: 0 auto 0 auto;
-    // }
+    @media screen and (max-width: 540px){
+        grid-template-columns: repeat(1,auto);  /* 3 columns */
+        grid-template-rows: repeat(6, ); /* 3 rows  */
+        margin: 0 auto 0 auto;
+    }
 `;
 
 
 export const BlogCell = styled.div`
+animation: 2s ${fadeAnimation};
+
     // margin-bottom: 15px;
     margin: 0 auto 0 auto;
     padding: 10px;
@@ -146,10 +151,14 @@ export const ArticleTitle = styled.h1`
 
 export const DescriptionWrapper = styled.div`
     width: 100%;
-    height: auto;
+    max-height: 70px;
     border: 2px dashed green;
     padding:0;
     overflow:hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+
+
 `;
 
 export const ArticleDescription = styled.p`
@@ -165,4 +174,40 @@ export const ArticleDescription = styled.p`
 
 export const ArticleLink = styled.a`
     text-decoration: none;
+`;
+
+
+export const BtnWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    height: auto;
+    // border: 3px dashed red;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+`;
+
+export const CButton = styled.button`
+    width: 150px;
+    color:white;
+    background: black;
+    height:40px;
+    margin: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid black;
+
+    &:hover{
+        color:black;
+        background: gold;
+        border: 1px solid black;
+    }
+
+    @media screen and (max-width: 360px){
+        height: auto;
+        width: 100%;
+
+    }
 `;
