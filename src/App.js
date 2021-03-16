@@ -3,6 +3,7 @@ import Home from './pages';
 import Blog from './pages/blog';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import GetInTouch from './pages/getintouch';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/blog" component={Blog} />
+          <Route path="/getintouch/me" component={GetInTouch} />
         </Switch>
     
       </Router>
