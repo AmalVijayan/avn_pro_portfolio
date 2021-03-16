@@ -4,7 +4,7 @@ import { fadeInLeft, fadeInDown } from 'react-animations';
 const fadeAnimation = keyframes`${fadeInLeft}`;
 
 export const BlogSectionContainer = styled.div`
-    height:auto;;
+    height:auto;
     color: black;
     align-items: center;    
     padding-bottom: 50px;
@@ -44,12 +44,17 @@ export const SectionHeading = styled.h1`
     text-align:center;
     color: black;
     font-size: 30px;
-    line-height: 16px;
+    line-height: 30px;
     font-weight: 600px;
     // letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 60px;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1130px){
+        font-size: 25px;
+
+    }
 
 
 `;
@@ -59,25 +64,26 @@ export const BlogRow = styled.div`
     // border: 3px dashed blue;
     display: grid;
 
-    grid-template-columns: repeat(3,500px);  /* 3 columns */
-    grid-template-rows: repeat(2,400px); /* 3 rows  */
+    grid-template-columns: repeat(3,400px);  /* 3 columns */
+    grid-template-rows: repeat(2,300px); /* 3 rows  */
+
     grid-gap: 25px 25px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
     margin: 0 auto 60 auto;
     padding: 10px;
 
-    @media screen and (max-width:1600px){
-        grid-template-columns: repeat(2,500px);  /* 3 columns */
-        grid-template-rows: repeat(3,400px); /* 3 rows  */
+    @media screen and (max-width:1300px){
+        grid-template-columns: repeat(2,400px);  /* 3 columns */
+        grid-template-rows: repeat(3,300px); /* 3 rows  */
     }
 
-    @media screen and (max-width: 1130px){
-        grid-template-columns: repeat(1,500px);  /* 3 columns */
-        grid-template-rows: repeat(6,400px); /* 3 rows  */
+    @media screen and (max-width: 850px){
+        grid-template-columns: repeat(1,400px);  /* 3 columns */
+        grid-template-rows: repeat(6,300px); /* 3 rows  */
     }
 
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 410px){
         grid-template-columns: repeat(1,auto);  /* 3 columns */
-        grid-template-rows: repeat(6, ); /* 3 rows  */
+        grid-template-rows: repeat(6, auto); /* 3 rows  */
         margin: 0 auto 0 auto;
     }
 `;
@@ -86,13 +92,12 @@ export const BlogRow = styled.div`
 export const BlogCell = styled.div`
 animation: 2s ${fadeAnimation};
 
-    // margin-bottom: 15px;
     margin: 0 auto 0 auto;
-    padding: 10px;
+    padding: 5px;
     // grid-area: col;
     // border: 3px dashed green;
-    height: 100%;
-    width:100%;
+    height: 300px;
+    width:400px;
     background: white;
 
     box-shadow: 0px 0px 13px 4px rgba(122,122,122,1);
@@ -100,9 +105,14 @@ animation: 2s ${fadeAnimation};
     -moz-box-shadow: 0px 0px 13px 4px rgba(122,122,122,1);
 
     &:hover{
-        transform: scale(1.02);
+        transform: scale(1.1);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 410px){
+        height: auto;
+        width:auto;
     }
 `;
 
@@ -116,10 +126,10 @@ export const BlogInfoWrapper = styled.div`
 
 
 export const ArticleImgWrapper = styled.div`
-    height: 60%;
+    height: 65%;
     width: 100%;
-    margin: 10px auto 10px auto;
-    padding: auto;
+    // margin: 10px auto 10px auto;
+    // padding: auto;
     // border: 2px dashed red;
 `;
 
@@ -132,17 +142,17 @@ export const ArticleImg = styled.img`
 
 export const TitleWrapper= styled.div`
     width: 100%;
-    height: auto;
-    border: 2px dashed green;
+    max-height: 10%;
+    // border: 2px dashed green;
     padding:0;
-    margin-bottom:3px;
+    margin:3px 0;
 `;
 
 
 export const ArticleTitle = styled.h1`
     text-align:left;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     // line-height: 20px;
     font-weight: 600px;
     // letter-spacing: 1px;
@@ -151,13 +161,11 @@ export const ArticleTitle = styled.h1`
 
 export const DescriptionWrapper = styled.div`
     width: 100%;
-    max-height: 70px;
-    border: 2px dashed green;
+    max-height: 25%;
+    // border: 2px dashed green;
     padding:0;
     overflow:hidden;
     text-decoration: none;
-    text-overflow: ellipsis;
-
 
 `;
 
@@ -168,7 +176,7 @@ export const ArticleDescription = styled.p`
     line-height: 20px;
     font-weight: 500;
     // letter-spacing: 1px;
-    margin-top: 5px;
+
 `;
 
 
@@ -196,7 +204,6 @@ export const CButton = styled.button`
     margin: 3px;
     font-size: 20px;
     cursor: pointer;
-    border: none;
     border: 1px solid black;
 
     &:hover{
@@ -210,4 +217,9 @@ export const CButton = styled.button`
         width: 100%;
 
     }
+`;
+
+export const BtnP = styled.p`
+    text-align:center;
+    margin-bottom: 10px;
 `;

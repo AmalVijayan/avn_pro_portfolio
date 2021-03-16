@@ -13,6 +13,7 @@ import { BlogSectionContainer,
          DescriptionWrapper,
          ArticleLink,
          BtnWrapper, 
+         BtnP,
          CButton
          } from './BlogElements'
 
@@ -59,7 +60,7 @@ const BlogSection = () => {
 
                             <TitleWrapper>
                                 <ArticleTitle>
-                                Multi-Class Classification With BERT & TensorFlow
+                                Classification With BERT & TensorFlow
                                 </ArticleTitle>
                             </TitleWrapper>
 
@@ -88,7 +89,7 @@ const BlogSection = () => {
 
                             <DescriptionWrapper>
                                 <ArticleDescription>
-                                The transformer model introduces an architecture that is solely based on attention mechanism and does not use any Recurrent Networks but yet produces results superior in quality to Seq2Seq models.
+                                The transformer model introduces an architecture that is solely based on attention mechanism and does not use any RNNs but yet produces better results.
                                 </ArticleDescription>
                             </DescriptionWrapper>
 
@@ -203,7 +204,7 @@ const BlogSection = () => {
 
                             <DescriptionWrapper>
                                 <ArticleDescription>
-                                    Docker is the most trusted and established tool for containerization and so it comes with a lot of pre-built images for all the major frameworks, software and tools for the industry.
+                                    Docker is the most trusted and established tool for containerization and so it comes with a lot of pre-built images for all the major toolsets in the industry.
                                 </ArticleDescription>
                             </DescriptionWrapper>
 
@@ -272,7 +273,7 @@ const BlogSection = () => {
 
                             <DescriptionWrapper>
                                 <ArticleDescription>
-                                    Speech Synthesis is one of the growing research areas with a number of real-world applications and has already entered the common households as a powerhouse for many voice-operated devices including virtual assistants like Alexa, Google Assistant, Cortana and Siri.
+                                    Speech Synthesis is one of the growing research areas with a number of real-world applications and has already entered the common households.
                                 </ArticleDescription>
                             </DescriptionWrapper>
 
@@ -318,7 +319,7 @@ const BlogSection = () => {
 
                             <DescriptionWrapper>
                                 <ArticleDescription>
-                                    Explainable AI or shortly XAI is a domain that deals with maintaining transparency to the decision making capability of complex machine learning models and algorithms.
+                                    Explainable AI or shortly XAI is a domain that deals with maintaining transparency to the decision making capability of complex ML models and algorithms.
                                 </ArticleDescription>
                             </DescriptionWrapper>
 
@@ -335,7 +336,7 @@ const BlogSection = () => {
 
                             <TitleWrapper>
                                 <ArticleTitle>
-                                MachineHack’s ‘Predict The News Category Hackathon
+                                Predict The News Category Hackathon
                                 </ArticleTitle>
                             </TitleWrapper>
 
@@ -358,13 +359,13 @@ const BlogSection = () => {
 
                             <TitleWrapper>
                                 <ArticleTitle>
-                                    Build A Generative Adversarial Network In 8 Simple Steps
+                                    Build A Generative Adversarial Network
                                 </ArticleTitle>
                             </TitleWrapper>
 
                             <DescriptionWrapper>
                                 <ArticleDescription>
-                                    GAN is an architecture developed by Ian Goodfellow and his colleagues in 2014 which makes use of multiple neural networks that compete against each other to make better predictions.
+                                    GAN is an architecture developed by Ian Goodfellow and his colleagues in 2014 which makes use of multiple NNs that compete against each other.
                                 </ArticleDescription>
                             </DescriptionWrapper>
 
@@ -376,7 +377,7 @@ const BlogSection = () => {
             </BlogsWrapper>
 
             <BtnWrapper>
-                <p> There are over a 100 technical articles!</p>
+                <BtnP> There are over a 100 technical articles!</BtnP>
                 <ArticleLink target="_blank" href="https://analyticsindiamag.com/author/amal-nairanalyticsindiamag-com/">
                     <CButton>
                      Browse all
