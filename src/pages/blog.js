@@ -18,6 +18,7 @@ const Blog = () => {
             <MobileMenu isOpen={isOpen} toggle={toggle} showScrollMenu={false} showHomeIcon={true}/>
             <NavBar toggle={toggle} showScrollMenu={false} showHomeIcon={true} />
             <BlogSection />
+            <Footer/>
         </>
     )
 }
