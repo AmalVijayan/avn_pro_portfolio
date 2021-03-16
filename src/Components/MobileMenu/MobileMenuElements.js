@@ -97,7 +97,7 @@ export const MobileMenuBtnWrapper = styled.div`
 `;
 
 
-export const HomeIconLink = styled.a`
+export const HomeIconLink = styled(LinkR)`
     display: ${({ showHomeIcon }) => (showHomeIcon ? 'grid' : 'none' )};
     color: #fff;
     font-size: 50px;

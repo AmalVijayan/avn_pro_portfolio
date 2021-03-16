@@ -12,8 +12,6 @@ import { MobileMenuContainer,
          MobileMenuBtnWrapper,
          HomeIconLink
         } from './MobileMenuElements'
-import {SocialIconLink} from '../Overview/OverviewElements'
-
 
 const MobileMenu = ({isOpen, toggle, showScrollMenu, showHomeIcon }) => {
     return (
@@ -43,7 +41,7 @@ const MobileMenu = ({isOpen, toggle, showScrollMenu, showHomeIcon }) => {
                     </MobileMenuItem>
                 </MobileMenuScrollLinks>
                 <MobileMenuBtnWrapper>
-                    <HomeIconLink showHomeIcon={showHomeIcon} href='/'>
+                    <HomeIconLink showHomeIcon={showHomeIcon} to='/'>
                             <FaHome />
                      </HomeIconLink>
                     <MobileMenuItemBtn>

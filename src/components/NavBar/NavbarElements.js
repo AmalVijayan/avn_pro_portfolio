@@ -142,7 +142,7 @@ export const NavBtnWrapper = styled.div`
 `;
 
 
-export const HomeIconLink = styled.a`
+export const HomeIconLink =styled(LinkR)`
     display:none;
     @media screen and (min-width: 768px){
         display: ${({ showHomeIcon }) => (showHomeIcon ? 'grid' : 'none' )};

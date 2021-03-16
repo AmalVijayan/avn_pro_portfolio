@@ -48,7 +48,7 @@ const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
                     <MobileIcons onClick={toggle}>
                         <FaBars/>
                     </MobileIcons>
-                    <HomeIconLink showHomeIcon={showHomeIcon} href='/'>
+                    <HomeIconLink showHomeIcon={showHomeIcon} to='/'>
                             <FaHome />
                      </HomeIconLink>
                     <NavMenu showScrollMenu={showScrollMenu}>
