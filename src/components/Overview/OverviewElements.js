@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link as LinkR } from 'react-router-dom'
 
 export const OverviewSectionContainer = styled.div`
 
@@ -210,7 +211,32 @@ export const CButton = styled.button`
     cursor: pointer;
     border: none;
     border: 1px solid black;
+    &:hover{
+        color:black;
+        background: gold;
+        border: 1px solid black;
+    }
 
+    @media screen and (max-width: 360px){
+        height: auto;
+        width: 100%;
+
+    }
+`;
+
+
+export const CButtonLink = styled(LinkR)`
+    width: 50%;
+    color:white;
+    background: black;
+    height:40px;
+    margin: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align:center;
+    padding: 5px;
     &:hover{
         color:black;
         background: gold;
