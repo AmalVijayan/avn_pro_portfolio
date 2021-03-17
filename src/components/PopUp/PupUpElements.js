@@ -20,7 +20,7 @@ export const CButton = styled.button`
     color:white;
     background: black;
     height:40px;
-    margin: 3px;
+    margin: 10px;
     font-size: 20px;
     cursor: pointer;
     border: 1px solid white;
@@ -35,5 +35,10 @@ export const CButton = styled.button`
         height: auto;
         width: 100%;
 
+    }
+
+    &:disabled{
+        background: grey;
+        cursor: not-allowed;
     }
 `;

@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@tippyjs/react": "^4.2.4",
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-animations": "^1.0.0",
     "react-device-detect": "^1.17.0",
@@ -20,8 +21,10 @@
     "reactjs-popup": "^2.0.4",
     "styled-components": "^5.2.1",
     "tippy.js": "^6.3.1",
+    "validator": "^13.5.2",
     "web-vitals": "^0.2.4"
   },
+  "proxy":"http://localhost:8000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
