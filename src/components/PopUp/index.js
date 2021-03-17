@@ -40,7 +40,7 @@ const PopUp = ( { button, popContent } ) => {
           email: email
         };
     
-        axios.post(`/avn/api/submit/email/`, { payload }, 
+        axios.post(`http://api.amalvnair.com/avn/api/submit/email/`, { payload }, 
                                                                   {"headers":{
                                                                       "Access-Control-Allow-Origin": "*",
                                                                       'Content-Type': 'application/json',
