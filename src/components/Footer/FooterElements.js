@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom'
 export const FooterContainer = styled.footer`
     // border: 3px dashed white;
     background-color: black;     
-    height: 80px;
+    height: auto;
     
-    @media screen and (max-width : 850px ){
-        padding: 10px;
+    // @media screen and (max-width : 850px ){
+    //     padding: 10px;
 
-        height: 200px;
+    //     height: 200px;
 
-    }
+    // }
 `;
 
 export const FooterWrapper = styled.div`
@@ -56,7 +56,7 @@ export const SocialLogo = styled(Link)`
     margin: auto 0 auto 20px;
 
     @media screen and (max-width : 850px ){
-        margin: auto auto 20px auto;
+        margin: 20px auto 20px auto;
     }
 `;
 
@@ -79,4 +79,32 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
+`;
+
+export const ReactLogoWrapper = styled.div`
+    // border: 2px dashed white;
+    width: auto:
+    height: 100%;
+    display: flex;
+    margin-right:10px;
+    align-items:center;
+
+    @media screen and (max-width : 850px ){
+        margin: auto auto 20px auto;
+    }
+`;
+
+export const ReactLogoText= styled.h1`
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+`;
+
+export const ReactLogo = styled.img`
+    width:40px;
+    height:40px;
+    margin-left: 10px;
 `;
