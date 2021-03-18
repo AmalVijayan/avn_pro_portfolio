@@ -54,7 +54,7 @@ const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
                     <NavMenu showScrollMenu={showScrollMenu}>
                         <NavItem>
                             <NavLinks to='profile' 
-                            offset={0}
+                            offset={-80}
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -64,7 +64,7 @@ const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks to='services' 
-                            offset={0}
+                            offset={-80}
                             smooth={true}
                             duration={500}
                             spy={true}

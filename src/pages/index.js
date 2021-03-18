@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 import Overview from '../components/Overview'
 import { OverviewObj } from '../components/Overview/Data'
 import Services from '../components/Services'
+import ScrollToTop from '../ScrollToTop'
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
     return (
         <>
             {/* <ReactTooltip className="toolTip" /> */}
+            <ScrollToTop />
             <MobileMenu isOpen={isOpen} toggle={toggle} showScrollMenu={true} showHomeIcon={false}/>
             <NavBar toggle={toggle} showScrollMenu={true} showHomeIcon={false}/>
             <HeadSection />

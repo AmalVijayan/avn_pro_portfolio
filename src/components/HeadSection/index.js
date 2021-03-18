@@ -37,7 +37,7 @@ const HeadSection = ({OnHover}) => {
                 </SectionP>
                 <SectionBtnWrapper>
                     <Button to='profile' 
-                            offset={-80}
+                            offset={-50}
                             smooth={true}
                             duration={500}
                             spy={true}
