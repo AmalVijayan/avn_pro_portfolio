@@ -90,7 +90,7 @@ export const BlogRow = styled.div`
 
 
 export const BlogCell = styled.div`
-animation: 2s ${fadeAnimation};
+animation: 1.5s ${fadeAnimation};
 
     margin: 0 auto 0 auto;
     padding: 5px;
