@@ -79,7 +79,7 @@ const MobileGetCVSection = () => {
 
                                 <span style={{textAlign: 'center', fontSize: '14px', fontWeight: '900', color: 'red' }}>
                                     By clicking submit, you agree that at the time of requesting my CV you are aware of the fact that it consists of sensitve information 
-                                    and that you will not miss use the information provided in any manner.
+                                    and that you will not misuse the information provided in any manner.
                                 </span>
 
                                 <BtnWrapper>
