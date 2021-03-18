@@ -50,7 +50,7 @@ const MobileGetCVSection = () => {
           email: email
         };
     
-        axios.post(`http://api.amalvnair.com/avn/api/submit/email/`, { payload })
+        axios.post(`https://api.amalvnair.com/avn/api/submit/email/`, { payload })
 
           .then(res => {
             // console.log(res);

@@ -41,7 +41,7 @@ const PopUp = ( { button, popContent } ) => {
         };
     
         console.log("Payload :: ", payload)
-        axios.post(`http://api.amalvnair.com/avn/api/submit/email/`, { payload })
+        axios.post(`https://api.amalvnair.com/avn/api/submit/email/`, { payload })
           .then(res => {
             // console.log(res);
             // console.log(res.data);+
