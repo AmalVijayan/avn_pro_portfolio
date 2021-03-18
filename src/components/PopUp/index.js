@@ -32,7 +32,7 @@ const PopUp = ( { button, popContent } ) => {
         validatorSpan = <span style={{  textAlign: 'center', marginLeft:'20px', fontSize: '20px', fontWeight: '900', color: 'red', }}>{emailError}</span> 
       }
 
-
+    
     const handleSubmit = event => {
         event.preventDefault();
     
@@ -40,18 +40,13 @@ const PopUp = ( { button, popContent } ) => {
           email: email
         };
     
-        axios.post(`http://api.amalvnair.com/avn/api/submit/email/`, { payload }, 
-                                                                  {"headers":{
-                                                                      "Access-Control-Allow-Origin": "*",
-                                                                      'Content-Type': 'application/json',
-                                                                      'Access-Control-Allow-Origin' : '*',
-                                                                      'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE'}}
-                                                                    )
-
+        console.log("Payload :: ", payload)
+        axios.post(`http://api.amalvnair.com/avn/api/submit/email/`, { payload })
           .then(res => {
             // console.log(res);
-            // console.log(res.data);
+            // console.log(res.data);+
             alert(res.data['message'])
+
           })
       }
 

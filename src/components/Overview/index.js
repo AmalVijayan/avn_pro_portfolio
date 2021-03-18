@@ -161,7 +161,7 @@ const Overview = ( { id,
                                 </Skills>
     
                                 <BtnWrapper>
-                                    <CButtonLink to='/get/cv'>
+                                    <CButtonLink to='/getcv/mobile'>
                                             Get my CV
                                     </CButtonLink>
                                     <CButtonLink to='/getintouch/me'>

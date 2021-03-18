@@ -49,7 +49,7 @@ const GetInTouchSection = () => {
                         </GetInTouchRow>
     
                         <BtnWrapper>
-                                <CButtonLink to='/get/cv'>
+                                <CButtonLink to='/getcv/mobile'>
                                         Get my CV
                                 </CButtonLink>                         
                         </BtnWrapper>

@@ -4,7 +4,7 @@ import Blog from './pages/blog';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import GetInTouch from './pages/getintouch';
-
+import MobileGetCV from './pages/mobile_email_submit';
 
 function App() {
 
@@ -15,6 +15,8 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/blog" component={Blog} />
           <Route path="/getintouch/me" component={GetInTouch} />
+          <Route path="/getcv/mobile" component={MobileGetCV} />
+
         </Switch>
     
       </Router>
