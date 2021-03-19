@@ -48,7 +48,7 @@ const Services = () => {
                         </ServiceTitle>
 
                         <ServiceDescription>
-                            Scrapes, cleans, processes and visualizes datastes and creates ML predictive models. Hands on experience with various ML frameworks and libraries in Python. 
+                            Scrapes, cleans, processes and visualizes datasets and creates ML predictive models. Hands on experience with various ML frameworks and libraries in Python. 
                         </ServiceDescription>
 
                     </ServiceInfoWrapper>

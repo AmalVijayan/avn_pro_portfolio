@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
     // border: 3px dashed white;
     background-color: black;     
     height: auto;
-    
+    bottom:0;
     // @media screen and (max-width : 850px ){
     //     padding: 10px;
 

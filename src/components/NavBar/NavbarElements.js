@@ -17,6 +17,11 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     }
+
+    @media screen and (max-width: 700px){
+        margin-top: -80px;
+    }
+
     `;
 
 export const NavContainer = styled.div`
@@ -152,5 +157,20 @@ export const HomeIconLink =styled(LinkR)`
         // border: 3px dashed red;
         justify-self: center;
         margin:auto;
+    }
+`;
+
+
+export const TechstackIconWrapper =styled.div`
+    margin: auto 20px auto 20px;
+    color: white;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        display: none;
     }
 `;

@@ -1,7 +1,9 @@
 import styled, { keyframes } from 'styled-components'
-import { bounce } from 'react-animations';
+import { rollIn, wobble } from 'react-animations';
 
-const bounceAnimation = keyframes`${bounce}`;
+const bounceAnimation = keyframes`${rollIn}`;
+const tadaAnimation =  keyframes`${wobble}`;
+
 
 export const GetInTouchSectionContainer = styled.div`
     height:auto;
@@ -55,6 +57,9 @@ export const SectionHeading = styled.h1`
         font-size: 25px;
 
     }
+    @media screen and (max-width: 700px){
+        margin-top: 100px;
+    }
 
 
 `;
@@ -79,7 +84,7 @@ export const GetInTouchRow = styled.div`
 
 
 export const GetInTouchCell = styled.div`
-animation: 2s ${bounceAnimation};
+animation: 1.2s ${bounceAnimation};
 
     margin: 0 auto 0 auto;
     padding: 5px;
@@ -87,7 +92,7 @@ animation: 2s ${bounceAnimation};
     // border: 3px dashed green;
     height: 100%;
     width:100%;
-    background: black;
+    background: white;
 
     // &:hover{
     //     transform: scale(1.1);
@@ -134,7 +139,7 @@ export const GetInTouchImg = styled.img`
 
 export const GetInTouchLabel = styled.h1`
     text-align:center;
-    color: white;
+    color: grey;
     font-size: 20px;
     line-height: 16px;
     font-weight: 600px;
@@ -163,6 +168,9 @@ export const BtnWrapper = styled.div`
 `;
 
 export const CButton = styled.button`
+animation: ${tadaAnimation};
+animation-duration: 3s;
+
     width: 50%;
     color:white;
     background: black;

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { FaBars, FaHome } from 'react-icons/fa'
+import { FaBars, FaHome, FaLayerGroup} from 'react-icons/fa'
 import {
     Nav, 
     NavContainer, 
@@ -11,10 +11,14 @@ import {
     NavBtn,
     NavBtnLink,
     NavBtnWrapper,
-    HomeIconLink
-} from './NavbarElements'
+    HomeIconLink,
+    TechstackIconWrapper
+} from './NavbarElements';
+import './NabarStyles.css';
 import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
 
@@ -82,6 +86,28 @@ const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
                             <NavBtnLink to="/getintouch/me">Get In Touch</NavBtnLink>
                         </NavBtn>
                     </NavBtnWrapper>
+                    <Tippy  interactive={true} interactiveBorder={200} delay={0} content={
+                        <div className='tippy_div'>
+                            <h4 className='tippy_heading' >Built using</h4>
+                            <ul className='tippy_content'>
+                                <li>React</li>
+                                <li>Django</li>
+                                <li>Celery</li>
+                                <li>Docker</li>
+                                <li>AWS EC2</li>
+                                <li>AWS CloudFront</li>
+                                <li>AWS S3</li>
+                                <li>AWS Route53</li>
+                                <li>AWS ACM</li> 
+                                <li>Nginx</li>
+                                </ul>
+                        </div>
+                            } 
+                            >  
+                        <TechstackIconWrapper>
+                            <FaLayerGroup size='20px' />
+                        </TechstackIconWrapper>
+                    </Tippy>
                 </NavContainer>
             </Nav>
             </IconContext.Provider>

@@ -17,7 +17,7 @@ export const BlogSectionContainer = styled.div`
 
     position: relative;
     z-index: 3;
-
+ 
 `;
 
 
@@ -54,6 +54,9 @@ export const SectionHeading = styled.h1`
     @media screen and (max-width: 1130px){
         font-size: 25px;
 
+    }
+    @media screen and (max-width: 700px){
+        margin-top: 100px;
     }
 
 
@@ -113,6 +116,15 @@ animation: 1.5s ${fadeAnimation};
     @media screen and (max-width: 410px){
         height: auto;
         width:auto;
+    }
+
+    
+    @media screen and (max-width: 500px){
+        &:hover{
+            transform: scale(1);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
     }
 `;
 

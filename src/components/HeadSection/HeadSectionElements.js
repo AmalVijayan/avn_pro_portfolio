@@ -24,7 +24,7 @@ export const SectionContainer = styled.div`
     }
 
     @media screen and (max-width: 1000px){
-        min-height: 600px;
+        min-height: 750px;
         padding-bottom: 50px;
     }
 `;

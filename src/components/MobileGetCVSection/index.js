@@ -69,8 +69,12 @@ const MobileGetCVSection = () => {
                         <SectionHeading>
                             Submit Your Email
                         </SectionHeading>
-                        <GetInTouchRow>
-                            <GetInTouchCell>
+                        <GetInTouchRow className="row">
+                            <GetInTouchCell className="cell">
+
+                                <GetInTouchImgWrapper className="imgWrap">
+                                        <GetInTouchImg className="img" src={require('../../images/port_cv.svg').default} />
+                                    </GetInTouchImgWrapper>
     
                                 <GetInTouchInfoWrapper>
     
