@@ -77,6 +77,17 @@ const NavBar = ({toggle, showScrollMenu, showHomeIcon}) => {
                             >
                                 Services</NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to='inventory' 
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            activeClass='active'
+                            >
+                                Arsenal</NavLinks>
+                        </NavItem>
                     </NavMenu>
                     <NavBtnWrapper>
                         <NavBtn>

@@ -11,6 +11,7 @@ import Overview from '../components/Overview'
 import { OverviewObj } from '../components/Overview/Data'
 import Services from '../components/Services'
 import ScrollToTop from '../ScrollToTop'
+import InventorySection from '../components/InventorySection'
 
 const Home = () => {
 
@@ -31,6 +32,7 @@ const Home = () => {
             <Overview { ...OverviewObj }/>
             <Services />
             {/* <SkillSection  { ...SkillObj } /> */}
+            <InventorySection />
             <Footer />
         </>
     )

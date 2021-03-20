@@ -39,6 +39,14 @@ const MobileMenu = ({isOpen, toggle, showScrollMenu, showHomeIcon }) => {
                             spy={true}
                             exact='true'onClick={toggle} >Services</MobileMenuLinks>
                     </MobileMenuItem>
+                    <MobileMenuItem>
+                        <MobileMenuLinks to='inventory' 
+                            offset={-50}
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'onClick={toggle} >Arsenal</MobileMenuLinks>
+                    </MobileMenuItem>
                 </MobileMenuScrollLinks>
                 <MobileMenuBtnWrapper>
                     <HomeIconLink showHomeIcon={showHomeIcon} to='/'>
