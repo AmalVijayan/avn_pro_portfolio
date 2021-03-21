@@ -123,8 +123,8 @@ export const InventoryInfoWrapper = styled.div`
 export const InventoryImgWrapper = styled.div`
 animation: 3.2s ${rotateAnimation};
 
-    height: 60%;
-    width: 68%;
+    height: 50%;
+    width: 58%;
     margin: auto; 
     padding: auto;
     // border: 2px dashed red;

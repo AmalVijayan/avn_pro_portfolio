@@ -4,6 +4,7 @@ export const inventoryArray = [
         {"img":require('../../images/flask.png').default, "title": "Flask" },
         {"img":require('../../images/celery.png').default, "title": "Celery" },
         {"img":require('../../images/logo512.png').default, "title": "React" },
+        {"img":require('../../images/jinja.png').default, "title": "Jinja" },
         {"img":require('../../images/html.svg').default, "title": "HTML" },
         {"img":require('../../images/css.svg').default, "title": "CSS" },
         {"img":require('../../images/js.svg').default, "title": "JS" },
@@ -22,11 +23,19 @@ export const inventoryArray = [
         {"img":require('../../images/route53.svg').default, "title": "AWS Route53" },
         {"img":require('../../images/acm.png').default, "title": "AWS CM" },
         {"img":require('../../images/rds.svg').default, "title": "AWS RDS" },
+        {"img":require('../../images/firebase.svg').default, "title": "Firebase" },
         {"img":require('../../images/linux.png').default, "title": "Linux" },
         {"img":require('../../images/docker.png').default, "title": "Docker" },
+        {"img":require('../../images/scrapy.png').default, "title": "Scrapy" },
+        {"img":require('../../images/selenium.png').default, "title": "Selenium" },
+        {"img":require('../../images/pandas.png').default, "title": "Pandas" },
         {"img":require('../../images/tf.png').default, "title": "Tensorflow" },
         {"img":require('../../images/tableau.png').default, "title": "Tableau" },
         {"img":require('../../images/quicksight.svg').default, "title": "AWS Quicksight" },
+        {"img":require('../../images/jupyter.png').default, "title": "Jupyter Notebook" },
+        {"img":require('../../images/spyder.png').default, "title": "Spyder" },
+        {"img":require('../../images/vscode.png').default, "title": "VS Code" },
+        {"img":require('../../images/sublime.svg').default, "title": "Sublime" },
         
     ]
 ;
